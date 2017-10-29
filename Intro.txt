@@ -1,0 +1,29 @@
+What's new in C#7... and 8!
+---------------------------
+
+Marcin Zajkowski: @zajkowskimarcin on Twitter
+Works at The Cogworks // WOW School // UDFND
+
+Code is all available at: ...
+
+Agenda
+------
+
+1. Intro (Pending...)
+2. C# 6 (we all know it, right?)
+2. C# 7 & 7.x
+    - Async Main
+    - Tuples
+    - Local Functions
+    - Pattern Matching
+    - Out Vars
+3. Umbraco <3 C#
+4. C# 8!
+    - Default Interface Members
+    - Nullable (non-nullable || null) Reference Types
+    - Async Streams
+    - Extension Everything
+5. Outro
+
+
+// Be focused & win a (dev)date with me or JetBrains license for any of their products! ;)
