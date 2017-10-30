@@ -82,6 +82,7 @@
     <Compile Include="0. Intro\IntroSlides.cs" />
     <Compile Include="1. Async Main\AsyncMain.cs" />
     <Compile Include="2. Tuples\SimpleTuples.cs" />
+    <Compile Include="2. Tuples\TuplesAreFun.cs" />
     <Compile Include="Util\ApplicationChooser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
