@@ -84,6 +84,7 @@
     <Compile Include="2. Tuples\SimpleTuples.cs" />
     <Compile Include="2. Tuples\TuplesAreFun.cs" />
     <Compile Include="3. Local Functions\LocalFunctions.cs" />
+    <Compile Include="4. Pattern Matching\PatternMatching.cs" />
     <Compile Include="Util\ApplicationChooser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
