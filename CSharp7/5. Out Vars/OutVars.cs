@@ -1,0 +1,35 @@
+﻿using System;
+
+namespace CSharp7._5._Out_Vars
+{
+    class OutVars
+    {
+        static void Main(string[] args)
+        {
+            const string input = "Will it explode?";
+            const string intput = "77";
+
+            // The old way
+            int result; // Compiler is smart!
+            if (int.TryParse(input, out result))
+            {
+                // Do something...
+            }
+
+            // The new way
+            if (int.TryParse(input, out var resultVariable))
+            {
+                // Wow!
+            }
+
+            Console.WriteLine(resultVariable); // Oh and it's not complaining here as well!
+
+            if (int.TryParse(intput, out resultVariable))
+            {
+                // Maybe now?
+            }
+
+            Console.WriteLine(resultVariable);
+        }
+    }
+}
