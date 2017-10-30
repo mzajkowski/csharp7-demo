@@ -10,7 +10,7 @@ Agenda
 ------
 
 1. Intro (Pending...)
-2. C# 6 (we all know it, right?)
+2. C# 6 (we all know it and use it, right?)
 2. C# 7 & 7.x
     - Async Main
     - Tuples
