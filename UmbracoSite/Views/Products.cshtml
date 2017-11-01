@@ -47,8 +47,6 @@
     {
         case Product p when p.ProductName.Length > 10:
             productTuple.name = $"{p.ProductName.Substring(0, Math.Min(p.ProductName.Length, 10))}...";
-            productTuple.backgroundImage = p.Photos.FirstOrDefault()?.Url;
-            productTuple.price = p.Price.ToString("F");
 
             break;
 

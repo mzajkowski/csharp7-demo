@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CSharp7._4._Pattern_Matching
 {
+    [Description("[5] Pattern Matching")]
     class PatternMatching
     {
         static void Main(string[] args)

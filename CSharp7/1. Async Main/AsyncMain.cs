@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace CSharp7._1._Async_Main
 {
+    [Description("[1] Async Main")]
     class AsyncMain
     {
         static void Main()

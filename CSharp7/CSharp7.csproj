@@ -86,6 +86,8 @@
     <Compile Include="3. Local Functions\LocalFunctions.cs" />
     <Compile Include="4. Pattern Matching\PatternMatching.cs" />
     <Compile Include="5. Out Vars\OutVars.cs" />
+    <Compile Include="6. Umbraco\Umbraco.cs" />
+    <Compile Include="7. CSharp 8\CSharp8.cs" />
     <Compile Include="Util\ApplicationChooser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

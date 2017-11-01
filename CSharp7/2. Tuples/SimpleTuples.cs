@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CSharp7._2._Tuples
 {
+    [Description("[2] Tuples part 1")]
     class SimpleTuples
     {
         static void Main()

@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CSharp7._3._Local_Functions
 {
+    [Description("[4] Local Functions")]
     class LocalFunctions
     {
         static void Main(string[] args)

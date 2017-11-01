@@ -18,7 +18,7 @@ namespace CSharp7.Util
     /// </summary>
     public class ApplicationChooser
     {
-        const string Keys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private const string Keys = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         /// <summary>
         /// Displays entry points and prompts the user to choose one.
@@ -64,10 +64,10 @@ namespace CSharp7.Util
             {
                 foreach (var option in options)
                 {
-                    Console.WriteLine($"{option.Key}: {GetEntryPointName(option.EntryPoint)}");
+                    Console.WriteLine($"{GetEntryPointName(option.EntryPoint)}");
                 }
                 Console.WriteLine();
-                Console.Write("Entry point to run (or hit return to quit)? ");
+                Console.Write("Gee, Brain, what do you want to learn today?? ");
 
                 MethodBase entryPoint = null;
                 do
@@ -84,7 +84,7 @@ namespace CSharp7.Util
                     var selected = options.FirstOrDefault(o => o.Key == key);
                     if (selected == null)
                     {
-                        Console.Write("Invalid choice; please select again: ");
+                        Console.Write("Invalid choice... please select again: ");
                     }
                     else
                     {
@@ -101,18 +101,19 @@ namespace CSharp7.Util
                     Console.WriteLine("Exception: {0}", e);
                 }
                 Console.WriteLine();
-                Console.WriteLine("(Finished; press return.)");
+                Console.WriteLine("[Finished] Press ENTER to continue.");
                 Console.ReadLine();
+                Console.Clear();
             }
         }
 
         private static int CompareMethods(MethodBase first, MethodBase second)
         {
-            Type firstType = first.DeclaringType;
-            Type secondType = second.DeclaringType;
+            var firstType = first.DeclaringType;
+            var secondType = second.DeclaringType;
 
-            string firstDescription = GetDescription(firstType);
-            string secondDescription = GetDescription(secondType);
+            var firstDescription = GetDescription(firstType);
+            var secondDescription = GetDescription(secondType);
 
             if (firstDescription == null && secondDescription == null)
             {
@@ -125,9 +126,10 @@ namespace CSharp7.Util
 
         private static object GetEntryPointName(MethodBase methodBase)
         {
-            Type type = methodBase.DeclaringType;
-            string description = GetDescription(type);
-            return description == null ? type.Name : $"[{description}] {type.Name}";
+            var type = methodBase.DeclaringType;
+            var description = GetDescription(type);
+
+            return description == null ? type?.Name : $"{description}";
         }
 
         private static string GetDescription(Type type) =>

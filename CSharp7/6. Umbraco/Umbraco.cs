@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics;
 
-namespace CSharp7._0._Intro
+namespace CSharp7._6._Umbraco
 {
-    [Description("[0] Intro")]
-    class IntroSlides
+    [Description("[7] Latest C# with Umbraco")]
+    class Umbraco
     {
         static void Main(string[] args)
         {
-            const string introSlidesUrl = "https://slides.com/zajkowskimarcin/whats-new-in-csharp-7-and-8/live#/";
+            const string introSlidesUrl = "https://slides.com/zajkowskimarcin/whats-new-in-csharp-7-and-8/live#/17";
 
             var psi = new ProcessStartInfo("chrome.exe")
             {

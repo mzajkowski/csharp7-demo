@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace CSharp7._2._Tuples
 {
+    [Description("[3] Tuples part 2")]
     class TuplesAreFun
     {
         static void Main(string[] args)

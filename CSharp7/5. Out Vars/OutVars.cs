@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CSharp7._5._Out_Vars
 {
+    [Description("[6] Out Vars")]
     class OutVars
     {
         static void Main(string[] args)
