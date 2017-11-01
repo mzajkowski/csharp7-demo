@@ -215,3 +215,20 @@ FakesAssemblies/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
+
+# Umbraco Site
+UmbracoSite/App_Data/cache/
+UmbracoSite/App_Data/courier/
+UmbracoSite/App_Data/Logs/
+UmbracoSite/App_Data/NuGetBackup/
+UmbracoSite/App_Data/preview/
+UmbracoSite/App_Data/umbraco.config
+UmbracoSite/App_Data/TEMP/
+UmbracoSite/App_Data/fm.workflow.log.*
+UmbracoSite/App_Data/umbraco.config
+UmbracoSite/App_Data/umbraco.licensing.log.txt
+UmbracoSite/media/
+UmbracoSite/Umbraco
+UmbracoSite/Umbraco_Client
+imagecache/
+ood.flag
