@@ -30,49 +30,47 @@
                         </a>
                     }*@
 
-            foreach (var product in Model.Content.FeaturedProducts)
-            {
-                @RenderProduct(product)
+                foreach (var product in Model.Content.FeaturedProducts)
+                {
+                    @RenderProduct(product)
                 }
             }
         </div>
     </div>
 </section>
+
 @helper RenderProduct(object product)
 {
-    string name = string.Empty, 
-           backgroundImage = string.Empty, 
-           url = string.Empty, 
-           price = string.Empty;
+    var productTuple = (name: "", backgroundImage: "", url: "", price: "");
 
     switch (product)
     {
         case Product p when p.ProductName.Length > 10:
-            name = $"{p.ProductName.Substring(0, Math.Min(p.ProductName.Length, 10))}...";
-            backgroundImage = p.Photos.FirstOrDefault()?.Url;
-            price = p.Price.ToString("F");
+            productTuple.name = $"{p.ProductName.Substring(0, Math.Min(p.ProductName.Length, 10))}...";
+            productTuple.backgroundImage = p.Photos.FirstOrDefault()?.Url;
+            productTuple.price = p.Price.ToString("F");
 
             break;
 
         case Product p:
-            name = p.ProductName;
-            backgroundImage = p.Photos.FirstOrDefault()?.Url;
-            price = p.Price.ToString("F");
+            productTuple.name = p.ProductName;
+            productTuple.backgroundImage = p.Photos.FirstOrDefault()?.Url;
+            productTuple.price = p.Price.ToString("F");
 
             break;
 
         case SuperProduct sp:
-            name = $"Super {sp.ProductName}";
-            backgroundImage = sp.Photos.FirstOrDefault()?.Url;
-            price = sp.Price.ToString("F");
+            productTuple.name = $"Super {sp.ProductName}";
+            productTuple.backgroundImage = sp.Photos.FirstOrDefault()?.Url;
+            productTuple.price = sp.Price.ToString("F");
 
             break;
     }
 
-    <a href="@url" class="product-grid__item" style="background-image: url('@backgroundImage')">
+    <a href="@productTuple.url" class="product-grid__item" style="background-image: url('@productTuple.backgroundImage')">
         <div class="product-grid__item__overlay">
-            <div class="product-grid__item__name">@name</div>
-            <div class="product-grid__item__price">@Model.Content.DefaultCurrency @price</div>
+            <div class="product-grid__item__name">@productTuple.name</div>
+            <div class="product-grid__item__price">@Model.Content.DefaultCurrency @productTuple.price</div>
         </div>
     </a>
 }
