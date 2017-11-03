@@ -8,11 +8,11 @@ namespace CSharp7._1._Async_Main
     [Description("[1] Async Main")]
     class AsyncMain
     {
-        static void Main()
+        static async void Main()
         {
-            //var seriousTalkBetweenTwoExperienceBeconEaters = await JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync();
+            var seriousTalkBetweenTwoExperienceBeconEaters = await JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync();
 
-            //Console.WriteLine(seriousTalkBetweenTwoExperienceBeconEaters);
+            Console.WriteLine(seriousTalkBetweenTwoExperienceBeconEaters);
         }
 
         private static async Task<string> JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync()
