@@ -8,7 +8,7 @@ namespace CSharp7._7._CSharp_8
     {
         static void Main(string[] args)
         {
-            const string introSlidesUrl = "https://slides.com/zajkowskimarcin/whats-new-in-csharp-7-and-8/live#/27";
+            const string introSlidesUrl = "https://slides.com/zajkowskimarcin/co-nowego-w-csharp-7-i-8/live#/27";
 
             var psi = new ProcessStartInfo("chrome.exe")
             {

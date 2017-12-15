@@ -1,23 +1,23 @@
-What's new in C#7... and 8!
----------------------------
+Co nowego w C#7, 7.x i... 8!
+----------------------------
 
-Marcin Zajkowski: @zajkowskimarcin on Twitter
-Works at The Cogworks // WOW School // UDFND
+Marcin Zajkowski: @zajkowskimarcin na Twitterze
+Biznesowo The Cogworks // WOW School // UDFND // umbraCoffee
 
-Code is all available at: https://github.com/mzajkowski/csharp7-demo
+Kod dostêpny pod adresem: https://github.com/mzajkowski/csharp7-demo
 
 Agenda
 ------
 
-1. Intro (Pending...)
-2. C# 6 (we all know it and use it, right?)
+1. Intro (W³aœnie trwa...)
+2. C# 6 (wszyscy znamy i u¿ywamy, prawda?)
 2. C# 7 & 7.x
     - Async Main
     - Tuples
     - Local Functions
     - Pattern Matching
     - Out Vars
-3. Umbraco <3 C#
+3. Istniej¹ce projekty + C# > 7.x
 4. C# 8!
     - Default Interface Members
     - Nullable (non-nullable || null) Reference Types
@@ -26,5 +26,5 @@ Agenda
 5. Outro
 
 
-// Be focused & win a (dev)date with me or JetBrains license for any of their products! ;)
-// Feel free to tweet what's implementing ITweetable.
+// B¹dŸcie skupieni & wygrajcie (dev)randkê ze mn¹ lub licencjê JetBrains na ich dowolny produkt! ;)
+// Œmia³o æwierkajcie wszystko co implementuje ITweetable (i nie tylko!).
