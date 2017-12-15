@@ -10,9 +10,9 @@ namespace CSharp7._1._Async_Main
     {
         static async void Main()
         {
-            var seriousTalkBetweenTwoExperienceBeconEaters = await JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync();
+            var seriousTalkBetweenTwoExperiencedBeconEaters = await JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync();
 
-            Console.WriteLine(seriousTalkBetweenTwoExperienceBeconEaters);
+            Console.WriteLine(seriousTalkBetweenTwoExperiencedBeconEaters);
         }
 
         private static async Task<string> JoinMemoriesFromLongLastingWhiskyNightsWithDangAsync()
