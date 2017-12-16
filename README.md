@@ -1,6 +1,6 @@
-# What's new in C# 7... and 8
+# Co nowego w C# 7, 7.x i... 8!
 
-Demo code from Umbraco UK Festival talk.
+Kod źródłowy wykorzystywany w demach podczas prezentacji na DotNetConfPL.
 
 ## Umbraco Backoffice
 
