@@ -16,6 +16,12 @@ namespace CSharp7._2._Tuples
             // (long, long) longIntsTyple = ((long)80, (long)1988)); // It's exactly same as above cast
             (byte, byte) byteTuple = (15, 30);
 
+            // Oh and btw... binary literals may help with readability of binary data (and not only)!
+            var oldNinetyNine = 0b01100011;
+            var newNinetyNine = 0b0110_0011;
+
+            ulong becauseICan = 88_11_14_12340;
+
             (float, float) floatsTuple = longIntsTuple; // no errors!
 
             object whoAmI = longIntsTuple;
@@ -31,7 +37,7 @@ namespace CSharp7._2._Tuples
             var isMarcinTellingTheTruth = tuple1.GetType() == tuple2.GetType();
             Console.WriteLine(isMarcinTellingTheTruth); // True! But why?
 
-            var tuple3 = (a: 1988L, b: 2000);
+            var tuple3 = (a: 1988L /* Integer literals! */, b: 2000);
             //tuple1 = tuple3; // Fails, because cannot be done without explicit conversion
 
             #endregion
@@ -71,7 +77,7 @@ namespace CSharp7._2._Tuples
 
             #region 3. Mutable FTW
 
-            (int left, int right) counters = default; // Another founding! :muscle:
+            (int left, int right) counters = default; // Defaults + Another founding! :muscle:
 
             void IncrementLeft() => counters.left++;
             void IncrementRight() => counters.right++;

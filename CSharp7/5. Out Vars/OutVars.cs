@@ -31,6 +31,12 @@ namespace CSharp7._5._Out_Vars
                 // Maybe now?
             }
 
+            // And I can do this if I don't need it anywhere else
+            if (int.TryParse(input, out _))
+            {
+                // Usage possible inside this scope only...
+            }
+
             Console.WriteLine(resultVariable);
         }
     }
